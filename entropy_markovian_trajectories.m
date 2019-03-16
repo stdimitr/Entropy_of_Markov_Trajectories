@@ -1,9 +1,9 @@
-function Hmarktraj = entropy_markovian_trajectories(sts)
+function Hmarktraj = entropy_markovian_trajectories(symbseq)
 
 
 %estimate the entropy reduction rate from a symbolic time serie
 
-%INPUT: sts         : symbolic time series that describes the Markovian Chain
+%INPUT: symbseq     : symbolic time series that describes the Markovian Chain
 %OUTPUT: Hmarktraj  : the estimated H matrix of Markovian Trajectories
 
 %DIMITRIADIS STAVROS v1.0 3/5/2012 / v1.1 14/6/2015
@@ -116,7 +116,6 @@ end
 %%%%%%%%%%% equation 27 - estimate the matrix H of trajectory entropies
 Hmarktraj=zeros(len,len);
 Hmarktraj = K - K1 + Hdelta ;
-
 
 
 
